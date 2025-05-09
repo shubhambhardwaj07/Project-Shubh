@@ -25,7 +25,9 @@ export const LoaderText = () => {
               <div className={styles.smallText}>{subtexts[index]}</div>
               {index < phrases.length && index > 0 && (
                 <motion.div
-                  className={styles.separator}
+                  className={`${
+                    index === 1 ? styles.separator : styles.separator
+                  }`}
                   initial={{ height: 0 }}
                   animate={{ height: "100vh" }}
                   transition={{
