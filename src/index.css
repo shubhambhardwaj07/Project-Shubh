@@ -12,6 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Apply box-sizing globally to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0; /* Optionally reset margin for all elements */
+  padding: 0; /* Optionally reset padding for all elements */
+}
 
 a {
   font-weight: 500;
